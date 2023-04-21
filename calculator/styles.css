@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/math-science-concept-with-school-lesson-items-retro-cartoon-style_1284-8084.jpg?w=740&t=st=1681993957~exp=1681994557~hmac=de23fb29c2911284fc740e7441147cf983a838725849f2424e4364e3a0d17304");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-auto-rows: minmax(180px, auto) repeat(5, 80px);
+    background-color: rgb(252, 191, 111);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 5px;
+    padding: 7px;
+}
+
+button {
+    cursor: pointer;
+    height: 80px;
+    box-shadow: rgba(130, 91, 8, 0.35) 0px 5px 15px;
+    border: 0px solid rgb(253, 230, 198);
+    background-color: rgba(253, 230, 198, 0.873);
+    border-radius: 3px;
+    font-size: large;
+    font-weight: 650;
+    color: rgb(124, 78, 4);
+
+}
+
+button:hover {
+    background-color: rgb(255, 216, 161);
+}
+
+button:active {
+    background-color: rgb(253, 205, 120);
+}
+
+.double {
+    grid-column: span 2;
+}
+
+.output {
+    padding-left: 10px;
+    grid-column: 1/-1;
+    min-height: 100px;
+    max-height: auto;
+    background-color: rgb(217, 154, 37);
+    border-radius: 5px;
+    margin-bottom: 2px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    /* word-wrap: break-word; */
+    word-break: break-all;
+}
+
+.output .previous{
+    color: #1d110075;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.output .current{
+    color: #1d11009a;
+    font-weight: 700;
+    font-size: xx-large;
+}

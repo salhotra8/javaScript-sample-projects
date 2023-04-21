@@ -1,0 +1,76 @@
+body {
+    background-image: url("https://leverageedu.com/blog/wp-content/uploads/2020/05/Creative-Writing-Topics.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 245, 208);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.accordine-container {
+    margin: 5px 0;
+    line-height: 1.6;
+    font: size 16px;
+}
+
+.question {
+    padding-bottom: 3px;
+    font-size: large;
+    border-bottom: 2px solid black;
+    margin-bottom: 12px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.question::after {
+    content: "+";
+    position: absolute;
+    right: 0px;
+    font-size: larger;
+    font-weight: 650;
+}
+
+.awnser {
+    /* max-height: 100px; */
+    height: 0;
+    overflow: hidden;
+    transition: .6s;
+
+}
+
+.active .awnser {
+    height: 100px;
+
+}
+
+.active .question {
+    font-size: medium;
+    transition: 1s;
+
+}
+
+.active .question::after {
+    content : '-'
+}

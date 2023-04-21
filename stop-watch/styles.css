@@ -1,0 +1,66 @@
+body {
+    background-image: url("https://c.tadst.com/gfx/1200x630/fb-stopwatch2.png?1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 24rem;
+    height: 14rem;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 60px;
+
+}
+
+.timer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    padding: 14px 25px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+.start-stop:active{
+    background-color: rgb(4, 255, 4);
+}
+
+.reset:active{
+    background-color: rgb(255, 17, 17);
+    
+}
+
+.start-stop{
+    background-color: rgba(3, 165, 3, 0.764);
+}
+
+.reset{
+    background-color: rgba(255, 0, 0, 0.666);
+    
+}
+
+.btn-div{
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
