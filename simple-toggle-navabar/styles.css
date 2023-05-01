@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: black;
+    height: fit-content;
+    color: white;
+    display: flex;
+    font-size: xx-large;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    margin: .7rem;
+}
+
+.navbar-links ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    height: 100%;
+}
+
+.navbar-links li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    /* display: block; */
+}
+
+.navbar-links li:hover {
+    background-color: rgba(255, 255, 255, 0.405);
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.navbar-toggle .bar {
+    background-color: white;
+    margin: 5px;
+    width: 3rem;
+    height: .3rem;
+    border-radius: .4rem;
+
+}
+
+@media all and (max-width:500px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .navbar-links li {
+        transition: .4s;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.navbar-links.active {
+    display: block;
+    animation: toggler 1s;
+}
+
+@keyframes toggler {
+    0% {
+        opacity: 0;
+        height: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 208px;
+    }
+
+}
